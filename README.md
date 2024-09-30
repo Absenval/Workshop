@@ -35,12 +35,12 @@
 - ✨Magic ✨
 
 ## Цель работы
-Ознакомиться с основными операторами зыка Python на примере реализации линейной регрессии.
+Ознакомиться с програмным обеспечением, которое будет использоваться на курсе
 
 ## Задание 1
-### хадача
+### Написать программу Hello World на Python с запуском в Jupiter Notebook.
 Ход работы:
-- текст
+- Произвести установку ПО Jupyter Notebook и проверить его работоспособность. Прописать вывод приветствия. Пронаблюдать за текстом в консоли.
 
 ```py
 
@@ -52,9 +52,9 @@ print('Hello World')
 
 
 ## Задание 2
-### задача
+### Написать программу Hello World на C# с запуском на Unity.
 
-- текст
+- Произвести установку ПО Unity Hub и среды исполнения C# в виде VisualStudio2022. Привязять VS к Unity и прописать вывод приветствия. Пронабоюдать за текстом в консоли.
 
 ```c#
 
@@ -78,36 +78,21 @@ public class NewBehaviourScript : MonoBehaviour
 ```
 
 ## Задание 3
-### Какова роль параметра Lr? Ответьте на вопрос, приведите пример выполнения кода, который подтверждает ваш ответ. В качестве эксперимента можете изменить значение параметра.
+### Оформить отчет в виде документации на github (markdown-разметка).
 
-- Перечисленные в этом туториале действия могут быть выполнены запуском на исполнение скрипт-файла, доступного [в репозитории](https://github.com/Den1sovDm1triy/hfss-scripting/blob/main/ScreatingSphereInAEDT.py).
-- Для запуска скрипт-файла откройте Ansys Electronics Desktop. Перейдите во вкладку [Automation] - [Run Script] - [Выберите файл с именем ScreatingSphereInAEDT.py из репозитория].
+- Написать, оформить и отредактировать отчёт по шаблону из задания.
 
 ```py
 
-import ScriptEnv
-ScriptEnv.Initialize("Ansoft.ElectronicsDesktop")
-oDesktop.RestoreWindow()
-oProject = oDesktop.NewProject()
-oProject.Rename("C:/Users/denisov.dv/Documents/Ansoft/SphereDIffraction.aedt", True)
-oProject.InsertDesign("HFSS", "HFSSDesign1", "HFSS Terminal Network", "")
-oDesign = oProject.SetActiveDesign("HFSSDesign1")
-oEditor = oDesign.SetActiveEditor("3D Modeler")
-oEditor.CreateSphere(
-	[
-		"NAME:SphereParameters",
-		"XCenter:="		, "0mm",
-		"YCenter:="		, "0mm",
-		"ZCenter:="		, "0mm",
-		"Radius:="		, "1.0770329614269mm"
-	], 
-)
+Собственно вот текст
 
 ```
 
 ## Выводы
 
-Абзац умных слов о том, что было сделано и что было узнано.
+Unity это очень контринтуитивная штука, без гайдов не смог додуматься до того что скрипт для консоли надо привязывать к объекту для его исполнения. Заставило иным образом взглянуть на игровой код.
+Также удивился изменившемуся интерфейсу VS, непривычно.
+
 
 | Plugin | README |
 | ------ | ------ |
